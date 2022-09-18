@@ -16,8 +16,7 @@
       rel="stylesheet"
     />
 
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>MainPage</title>
     <!-- Style -->
@@ -46,9 +45,9 @@
     <section class="hero-section">
       <div class="hero-container">
         <div class="hero-left">
-          <h1>Shallow Light Upon the Sea</h1>
-          <p>Story Teller</p>
-          <p>Tells tales</p>
+          <h1 data-aos="fade-up">Shallow Light Upon the Sea</h1>
+          <p data-aos="fade-up">Story Teller</p>
+          <p data-aos="fade-up">Tells tales</p>
         </div>
         <div class="hero-right">
           <!-- <h1>Some Picture or something idk</h1> -->
@@ -84,7 +83,7 @@
 
     <section class="story-section">
       <div>
-        <h1>Story Showcase here</h1>
+        <h1 data-aos="fade-up">Story Showcase here</h1>
       </div>
     </section>
 
@@ -94,7 +93,7 @@
           <div class="future-content">
             <h1>Salty Path</h1>
             <span>25 December 2025</span>
-            <p>
+            <p data-aos="fade-up">
               I have been working on an original fantasy novel for quite awhile
               now, however I have yet to find a publisher. The whole plot have
               yet to be finished, I wish to revise this so it would be very fun
@@ -112,7 +111,7 @@
           </div>
         </div>
         <div class="future-right">
-          <div class="future-img">
+          <div class="future-img" data-aos="fade-left">
             <img src="/images/future-cover.jpg" alt="Future novel plan" />
           </div>
         </div>
@@ -123,6 +122,9 @@
       <p>Live a Life!</p>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
