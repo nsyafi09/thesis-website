@@ -93,6 +93,7 @@ h1, h2, h3, p {
     height: 90vh;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     background-image: url(/images/sea-back.jpg);
 }
 
@@ -177,7 +178,7 @@ h1, h2, h3, p {
 
 /* ========= Passage Section ======== */
 .passage-section {
-    height: 80vh;
+    height: auto;
     background-attachment: fixed;
     background-size: cover;
     background-color: var(--shadowblue);
@@ -195,26 +196,33 @@ h1, h2, h3, p {
 .passage-left {
     background-image: url(/images/passage.png);
     background-size: cover;
+    background-position: center;
 
     width: 43vw;
-    height: 65vh;   
+    height: 80vh;   
+
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .passage-right {
     background-color: var(--rich-black);
     
     width: 43vw;
-    height: 65vh;
+    height: 80vh;
 
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
+
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .passage-content {
-    max-height: 65vh;
+    max-height: 80vh;
     overflow-y: auto;
 
     margin-left: 5vw;
@@ -303,7 +311,7 @@ h1, h2, h3, p {
 
 /* ======== Future Section ========= */
 .future-section {
-    height: 100vh;
+    height: auto;
     background-color: var(--soft-white);
 }
 
@@ -329,6 +337,8 @@ h1, h2, h3, p {
 .future-content {
     margin-left: 8vw;
     margin-right: 2vw;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 .future-content h1 {
@@ -354,6 +364,10 @@ h1, h2, h3, p {
     flex-direction: column;
     align-items: start;
     justify-content: center;
+
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 .future-img img {
