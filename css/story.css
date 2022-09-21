@@ -56,6 +56,11 @@
     margin-left: 60px;
 }
 
+.story-data svg {
+    width: 1.5em;
+    vertical-align: middle;
+}
+
 .story-data p {
     font-size: 0.9rem;
     border-bottom: 1px solid var(--soft-grey);
@@ -81,6 +86,8 @@
 .story-content p {
     font-size: 18px;
     line-height: 2rem;
+
+    word-wrap: break-word;
 }
 
 .story-route {
@@ -104,7 +111,7 @@
 .story-route li {
     border-right: 1px solid var(--soft-grey);
     padding-right: 60px;
-  }
+}
 
 .story-route ul:last-child {
     border: none; /* Remove border from the last .flex-item child in the form */
@@ -112,4 +119,79 @@
 
 .story-meta a, .story-data p, .story-title h1, .story-content p, .story-route a {
     color: var(--rich-black);
+}
+
+
+@media all and (max-width: 550px) {
+    .story-meta {
+        margin-top: 3vh;
+    }
+    
+    .story-container {
+        border: none;
+        width: 100vw;
+
+        margin-top: 1vh;
+    }
+    
+    .story-data {
+        padding-top: 3vh;
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+    
+    .story-data svg {
+        width: 1.5em;
+        vertical-align: middle;
+    }
+    
+    .story-data p {
+        font-size: 0.8rem;
+    }
+    
+    .story-title {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    
+    .story-content {
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+    
+    .story-content p {
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+    
+    .story-route {
+        padding-right: 16px;
+        padding-left: 16px;
+    
+        padding-top: 48px;
+        padding-bottom: 48px;
+
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+    
+    .story-route ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    .story-route li {
+        border-right: 1px solid var(--soft-grey);
+        /* padding-right: 60px; */
+    }
+    
+    .story-route ul:last-child {
+        border: none; /* Remove border from the last .flex-item child in the form */
+    }
+    
+    .story-meta a, .story-data p, .story-title h1, .story-content p, .story-route a {
+        color: var(--rich-black);
+    }
 }
