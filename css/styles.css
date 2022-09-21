@@ -20,12 +20,14 @@
     font-family: 'Playfair Display', serif;
     /* box-sizing: border-box; */
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--platinum);
+    background-color: var(--soft-white);
 }
 
 ul {
@@ -138,6 +140,10 @@ h1, h2, h3, p {
     text-shadow: var(--dark-shadow);
 }
 
+.hero-left h1, .hero-left p {
+    margin-bottom: 5vh;
+}
+
 .hero-right {
     width: 43vw;
     height: 65vh;
@@ -203,7 +209,7 @@ h1, h2, h3, p {
     background-position: center;
 
     width: 43vw;
-    height: 80vh;   
+    height: 90vh;   
 
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -213,7 +219,7 @@ h1, h2, h3, p {
     background-color: var(--rich-black);
     
     width: 43vw;
-    height: 80vh;
+    height: 90vh;
 
     display: flex;
     flex-direction: column;
@@ -221,21 +227,25 @@ h1, h2, h3, p {
     align-items: center;
     justify-content: center;
 
-    margin-top: 5vh;
-    margin-bottom: 5vh;
 }
 
 .passage-content {
-    max-height: 80vh;
+    max-height: 90vh;
     overflow-y: auto;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     margin-left: 5vw;
     margin-right: 5vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .passage-content h1 {
     font-size: 2.6rem;
     font-weight: 300;
+    margin-bottom: 3vh;
 }
 
 .passage-content p {
@@ -299,7 +309,7 @@ h1, h2, h3, p {
 
 
 /* ======= Story Showcase Section ========*/
-.story-section {
+.showcase-section {
     height: 80vh;
     background-attachment: fixed;
     background-size: cover;
@@ -379,9 +389,10 @@ h1, h2, h3, p {
     box-shadow: 20px 25px var(--rich-black);
 }
 
-.future-section h1, .future-section p, span {
+.future-section h1, .future-section p, .future-section span {
     color: var(--rich-black);
     line-height: 1.85rem;
+    margin-bottom: 5vh;
 }
 
 /* Future Mobile */
@@ -482,83 +493,6 @@ footer p {
 /* ========  ======== ========= */
 /* ========  ======== ========= */
 /* Container- Story */
-main {
-    display: grid;
-    place-items: center; 
-}
-
-.container-content {
-    box-sizing: border-box;
-    /* place-items: center; */
-    background-color: var(--platinum);
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    line-height: 2rem;
-    margin: 1vw 5vw;
-    /* margin-top: 1vw;
-    margin-right: 5vw;
-    margin-left: 5vw; */
-}
-
-.title {
-    text-align: center;
-    margin-bottom: 40px;
-    /* border: 1px solid black; */
-}
-
-.title h1 {
-    /* display: inline-flex; */
-    padding: 10px 30px;
-    background-color: var(--oxford-blue);
-    box-shadow: var(--dark-shadow);
-    border-radius: 8px;
-}
-
-.story-content {
-    /* line-height: 2rem; */
-    background-color: var(--oxford-blue);
-    margin-right: 1rem;
-    margin-left: 1rem;
-    box-shadow: var(--dark-shadow);
-    border-radius: 8px;
-}
-
-.story-content p {
-    padding: 10px 30px;
-}
-
-.story-foot {
-    margin-top: 1rem;
-}
-
-.story-foot ul {
-    padding-left: 0;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-.story-foot button {
-    font-family: inherit;
-    font-size: 28px;
-    font-weight: 500;
-
-    background-color: var(--oxford-blue);
-    border: 1px solid black;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    padding: 0px 20px;
-
-    box-shadow: var(--dark-shadow);
-    border-radius: 8px;
-    cursor: pointer;
-}
-
 .chat-box {
     position: absolute;
     display: flex;

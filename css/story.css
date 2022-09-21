@@ -1,0 +1,115 @@
+:root {
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    --rich-black: #0D1B2A;
+    --oxford-blue: #1B263B;
+    --bdazzled-blue: #415A77;
+    --shadowblue: #778DA9;
+    --platinum: #E0E1DD;
+    --soft-blue: rgb(225,239,242);
+    --soft-white: rgb(247, 247, 247);
+    --soft-grey: rgb(188, 188, 212);
+
+    --transparent-white-back:rgba(255, 255, 255, 0.4);
+
+    --font-playfair: 'Playfair Display', serif;
+    --font-roboto: 'Roboto', sans-serif;;
+}
+
+
+/* * {
+    color: var(--rich-black);
+} */
+
+.story-section {
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-meta {
+    margin-top: 5vh;
+    width: 90vw;
+}
+
+.story-meta ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.story-container {
+    border: 1px solid var(--soft-grey);
+
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    width: 90vw;
+
+}
+
+.story-data {
+    display: flex;
+    padding-top: 40px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.story-data p {
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--soft-grey);
+}
+
+.story-title {
+    padding-top: 16px;
+    padding-bottom: 24px;
+    padding-right: 60px;
+    padding-left: 60px;
+
+    border-bottom: 1px solid var(--soft-grey);
+}
+
+.story-content {
+    margin-right: 60px;
+    margin-left: 60px;
+
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.story-content p {
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+.story-route {
+    border-top: 1px solid var(--soft-grey);
+    margin-top: 68px;
+
+    padding-right: 60px;
+    padding-left: 60px;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.story-route ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.story-route li {
+    border-right: 1px solid var(--soft-grey);
+    padding-right: 60px;
+  }
+
+.story-route ul:last-child {
+    border: none; /* Remove border from the last .flex-item child in the form */
+}
+
+.story-meta a, .story-data p, .story-title h1, .story-content p, .story-route a {
+    color: var(--rich-black);
+}
