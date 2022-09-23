@@ -16,10 +16,6 @@
     --font-roboto: 'Roboto', sans-serif;;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 /* * {
     color: var(--rich-black);
 } */
