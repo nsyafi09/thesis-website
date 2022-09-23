@@ -16,9 +16,10 @@
 }
 
 /* Setup */
-* {
+*, *::before, *::after {
+    box-sizing: border-box;
+
     font-family: 'Playfair Display', serif;
-    /* box-sizing: border-box; */
     color: white;
     margin: 0;
     padding: 0;
@@ -385,7 +386,7 @@ h1, h2, h3, p {
 }
 
 .future-img img {
-    max-height: 75vh;
+    width: 43vw;
     box-shadow: 20px 25px var(--rich-black);
 }
 
@@ -449,6 +450,10 @@ h1, h2, h3, p {
         color: var(--rich-black);
         line-height: 1.5rem;
     }
+}
+
+@media all and (max-width: 750px) {
+
 }
 
 

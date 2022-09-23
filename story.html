@@ -16,6 +16,8 @@
       rel="stylesheet"
     />
 
+    <script defer src="index.js"></script>
+
     <title>Story</title>
     <!-- Style -->
     <link rel="stylesheet" href="css/styles.css" />
@@ -74,59 +76,13 @@
           <h1>Had I Have One More Envelope to Write</h1>
         </div>
         <div class="story-content">
-          <p>
-            A nostalgic scent came to mind, an old tale which began to uncover
-            itself to the surface of heart. The old to thrive, not giving to the
-            world, to expect a better tomorrow and to appreciate every day. That
-            old rhyme of feeling would bring me back, just to give you an
-            envelope with a letter inside. Just like it was many years ago.
-            <br /><br />
-            If time were to just go back to that smiling days, then I would
-            still be writing this letter to you. An old one, revealing my
-            adventures to you, the things I have done, and the people I have
-            met. Just looking at the sky reminded me that we look at the same
-            one. I just hope that you are still looking at it, this beautiful
-            view blessed by the majesty of the world. For just one more time, I
-            would like to give you a letter inside the envelope, one that had
-            not come for many long nights. I would like to repay you for your
-            kindness, your love, everything you have done for me. I want it to
-            give you a tiny smile under this pretty sky, to give you a thank you
-            letter from me to you.<br /><br />
-            I started writing the things I want to say, so many things came to
-            mind that the paper was written with imaginary ink. Empty, without a
-            word, because a single paper could not explain how much you meant to
-            me. I used the same envelope, the old one that I used to gave you.
-            The envelope brought me an old world that brought me to tears.
-            Reminding me of that nostalgic breeze, I kept writing with the
-            shadow pen, all I know is that I would jump with joy had I meet you
-            once more. As I finished my letter, to give it to you was my
-            purpose. For once, I want to give it by myself. This envelope with a
-            letter inside that took so long, just to come for you. <br /><br />
-            I took the plane leaving the big city, to an old rural place where
-            we used to play. While the thought of seeing you clouded my emotion.
-            I could not wipe the grin off of my face. In that old town where the
-            many of the young left to search for a larger pond, flowing through
-            a river to the world of sea, leaving it forever. Many things have
-            changed, many new things I have never seen before, yet the feeling
-            was never different. It was the same rhyme of memoirs as the one I
-            felt years ago. The letter I hold for you, inside this old envelope
-            that is meant for you, as if shaking out of patience for it to meet
-            its reader.<br /><br />
-            I took the train and opened the window. This wind that never gets
-            old startled me, breezy in the face. It reminded me of the time we
-            played, the days we wished the sun would never set. The night where
-            it is cold and you told me to not be scared. As long as the heart
-            moves, the dream and effort would never fade. The encouragement you
-            gave that led me here. I would like to give you one more envelope
-            with a letter inside.<br /><br />
+          <p id="story">
           </p>
         </div>
 
-        <div class="story-route">
-          <ul>
-            <li><a>Route1</a></li>
-            <li><a>Route2</a></li>
-          </ul>
+        <div class="story-route" id="routes">
+          <a>Route 1</a>
+          <a>Route 2</a>
         </div>
       </div>
     </section>
@@ -146,5 +102,11 @@
     <footer>
       <p>Live a Life!</p>
     </footer>
+
+    <script>
+      const story = document.getElementById('story')
+      const storyString = {content: story.outerHTML}
+      console.log(JSON.stringify(storyString))
+    </script>
   </body>
 </html>
