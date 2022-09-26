@@ -503,14 +503,3 @@ footer p {
 /* ========  ======== ========= */
 /* ========  ======== ========= */
 /* Container- Story */
-.chat-box {
-    position: absolute;
-    display: flex;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    right: 0;
-    bottom: 0;
-    /* border: 2px solid black; */
-    height: 40vh;
-    width: 12vw;
-}

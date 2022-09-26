@@ -22,6 +22,7 @@
     <!-- Style -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/story.css" />
+    <link rel="stylesheet" href="css/chatbox.css" />
   </head>
   <body>
     <header class="header-container">
@@ -76,8 +77,7 @@
           <h1 id="title">Had I Have One More Envelope to Write</h1>
         </div>
         <div class="story-content">
-          <p id="story">
-          </p>
+          <p id="story"></p>
         </div>
 
         <div class="story-route" id="routes">
@@ -87,26 +87,14 @@
       </div>
     </section>
 
-    <div class="chat-box">
-      <!-- <script
-        id="cid0020000323440110684"
-        data-cfasync="false"
-        async
-        src="//st.chatango.com/js/gz/emb.js"
-        style="width: 100%; height: 100%"
-      >
-        {"handle":"discstory","arch":"js","styles":{"a":"415A77","b":90,"c":"FFFFFF","d":"FFFFFF","f":90,"i":90,"k":"415A77","l":"415A77","m":"415A77","n":"FFFFFF","o":90,"p":"10","q":"415A77","r":90,"t":0,"ab":false,"surl":0,"cnrs":"0.35","fwtickm":1}}
-      </script> -->
-    </div>
-
     <footer>
       <p>Live a Life!</p>
     </footer>
 
     <script>
-      const story = document.getElementById('story')
-      const storyString = {content: story.outerHTML}
-      console.log(JSON.stringify(storyString))
+      const story = document.getElementById("story");
+      const storyString = { content: story.outerHTML };
+      console.log(JSON.stringify(storyString));
     </script>
   </body>
 </html>
