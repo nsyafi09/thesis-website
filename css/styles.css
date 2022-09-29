@@ -392,6 +392,7 @@ h1, h2, h3, p {
 
 .future-img img {
     width: 43vw;
+    max-width: 500px;
     box-shadow: 20px 25px var(--rich-black);
 }
 

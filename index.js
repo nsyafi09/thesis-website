@@ -89,7 +89,7 @@ const storyBranch = [
     }
   ]
   
-  startGame()
+startGame()
 
 
 
@@ -97,3 +97,25 @@ const storyBranch = [
 
 // For the Chat BOX
 
+const chat = document.getElementById('chatBox')
+chat.style.display = 'none';
+
+// chatButton.addEventListener("click", showChat);
+
+
+function showChat() {
+  if (chat.style.display === "none") {
+    chat.style.display = "block";
+  } else {
+    chat.style.display = "none";
+  }
+}
+
+// const chatButton = document.getElementsByClassId("chatBtn");
+// chatButton.addEventListener("click", function() {
+//   if (chat.style.display === "none") {
+//     chat.style.display = "block";
+//   } else {
+//     chat.style.display = "none";
+//   }
+// })
