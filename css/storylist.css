@@ -1,0 +1,120 @@
+:root {
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    --rich-black: #0D1B2A;
+    --oxford-blue: #1B263B;
+    --bdazzled-blue: #415A77;
+    --shadowblue: #778DA9;
+    --platinum: #E0E1DD;
+    --soft-blue: rgb(225,239,242);
+    --soft-white: rgb(247, 247, 247);
+    --soft-grey: rgb(188, 188, 212);
+
+    --transparent-white-back:rgba(255, 255, 255, 0.4);
+
+    --font-playfair: 'Playfair Display', serif;
+    --font-roboto: 'Roboto', sans-serif;;
+}
+
+.story-list-section {
+    min-height: 75vh;
+    height: auto;
+
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.story-list-container {
+    height: inherit;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.story-list-name {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+    text-align: center;
+
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.story-list-name h1 {
+    color: var(--rich-black);
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: var(--font-playfair);
+}
+
+.story-list-left {
+    background-image: url(/images/passage.png);
+    background-size: cover;
+    background-position: center;
+
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+    width: 460px;
+    height: 350px;
+
+    border: 1px solid var(--soft-grey);
+    border-right: none;
+}
+
+
+
+.story-list-right {
+    width: 460px;
+    height: 350px;
+
+    border: 1px solid var(--soft-grey);
+    border-left: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.story-list-right h1 {
+    color: var(--rich-black);
+    font-size: 2rem;
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.story-list-right p {
+    color: var(--rich-black);
+    font-size: 1.5rem;
+
+    text-shadow: var(--dark-shadow);
+}
+
+.story-list-right h1, .hero-left p {
+    margin-bottom: 5vh;
+}
+
+.story-data-list {
+    display: flex;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.story-data-list svg {
+    width: 1.5em;
+    vertical-align: middle;
+}
+
+.story-data-list p {
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--soft-grey);
+}
