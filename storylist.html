@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <!-- Special no zoom on phone -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Playfair+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script defer src="index.js"></script>
+
+    <title>Story</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/story.css" />
+    <link rel="stylesheet" href="css/storylist.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <nav class="nav-container">
+        <a class="nav-logo" href="/">
+          <p>Someday Under the Blue Sky</p>
+        </a>
+        <ul class="nav-list">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="storylist.html">Story</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="story-list-section">
+      <div class="story-list-name">
+        <h1>List of Stories</h1>
+      </div>
+      <div class="story-list-container">
+        <div class="story-list-card">
+          <div
+            class="story-list-left"
+            onclick="location.href='story.html';"
+            style="cursor: pointer"
+          ></div>
+          <div class="story-list-right">
+            <div class="story-data-list">
+              <p>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="black"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+                    />
+                  </svg> </span
+                >Amber Memoirs Series
+              </p>
+            </div>
+            <div
+              class="story-title-list"
+              data-aos="fade-up"
+              onclick="location.href='story.html';"
+              style="cursor: pointer"
+            >
+              <h1 id="title">Placeholder</h1>
+            </div>
+            <div
+              class="story-preview"
+              data-aos="zoom-in"
+              onclick="location.href='story.html';"
+              style="cursor: pointer"
+            >
+              <p id="story">Placeholder</p>
+            </div>
+            <div class="story-genre">
+              <ul>
+                <li>Nostalgic</li>
+                <li>Heartwarming</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECOND CARD -->
+        <div class="story-list-card">
+          <div class="story-list-left2"></div>
+          <div class="story-list-right">
+            <div class="story-data-list">
+              <p>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="black"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+                    />
+                  </svg> </span
+                >Amber Memoirs Series
+              </p>
+            </div>
+            <div class="story-title-list" data-aos="fade-up">
+              <h1 id="title">Placeholder</h1>
+            </div>
+            <div class="story-preview" data-aos="zoom-in">
+              <p id="story">Placeholder</p>
+            </div>
+            <div class="story-genre">
+              <ul>
+                <li>Mysterious</li>
+                <li>Upcoming</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Live a Life!</p>
+    </footer>
+
+    <script>
+      const story = document.getElementById("story");
+      const storyString = { content: story.outerHTML };
+      console.log(JSON.stringify(storyString));
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

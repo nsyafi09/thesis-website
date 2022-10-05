@@ -16,23 +16,30 @@ function startGame() {
 
 function showStoryNode(storyNodeIndex) {
     const storyNode = storyBranch.find(storyNode => storyNode.id === storyNodeIndex)
-    storyEl.innerHTML = storyNode.text
-
-    titleEl.textContent = storyNode.title
-  
-    while (routesEl.firstChild) {
-        routesEl.removeChild(routesEl.firstChild)
+    // If added to check if it exist
+    if (storyEl) {
+      storyEl.innerHTML = storyNode.text
     }
-  
-    storyNode.routes.forEach(route => {
-      if (showRoute(route)) {
-        const choice = document.createElement('a')
-        choice.innerText = route.text
-        choice.setAttribute("href", "#top")
-        choice.addEventListener('click', () => selectRoute(route))
-        routesEl.appendChild(choice)
+    if (titleEl) {
+      titleEl.textContent = storyNode.title
+    }
+
+    if (routesEl) {
+      // Removing Routes Element from HTML
+      while (routesEl.firstChild) {
+        routesEl.removeChild(routesEl.firstChild)
       }
-    })
+
+      storyNode.routes.forEach(route => {
+        if (showRoute(route)) {
+          const choice = document.createElement('a')
+          choice.innerText = route.text
+          choice.setAttribute("href", "#top")
+          choice.addEventListener('click', () => selectRoute(route))
+          routesEl.appendChild(choice)
+        }
+      })
+    }
 }
 
 function showRoute(route) {
@@ -98,16 +105,17 @@ startGame()
 // For the Chat BOX
 
 const chat = document.getElementById('chatBox')
-chat.style.display = 'none';
+if (chat) {
+  chat.style.display = 'none';
 
-// chatButton.addEventListener("click", showChat);
+  // chatButton.addEventListener("click", showChat);
 
-
-function showChat() {
-  if (chat.style.display === "none") {
-    chat.style.display = "block";
-  } else {
-    chat.style.display = "none";
+  function showChat() {
+    if (chat.style.display === "none") {
+      chat.style.display = "block";
+    } else {
+      chat.style.display = "none";
+    }
   }
 }
 
