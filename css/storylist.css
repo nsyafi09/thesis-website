@@ -62,7 +62,7 @@
 }
 
 .story-list-left {
-    background-image: url(/images/had-i-had-envelope.png);
+    background-image: url(/images/had-i-had-envelope.jpg);
     background-size: cover;
     background-position: center;
 
@@ -78,7 +78,7 @@
 
 /* Placeholder for 2nd image */
 .story-list-left2 {
-    background-image: url(/images/sea-walk.png);
+    background-image: url(/images/sea-walk.jpg);
     background-size: cover;
     background-position: center;
 
