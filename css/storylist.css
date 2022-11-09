@@ -13,7 +13,8 @@
     --transparent-white-back:rgba(255, 255, 255, 0.4);
 
     --font-playfair: 'Playfair Display', serif;
-    --font-roboto: 'Roboto', sans-serif;;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-garamond: 'EB Garamond', 'serif';
 }
 
 .story-list-section {
@@ -172,6 +173,10 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
+}
+
+.story-preview * {
+    font-family: var(--font-garamond);
 }
 
 .story-genre {
