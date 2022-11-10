@@ -186,3 +186,20 @@
         padding-bottom: 48px;
     }
 }
+
+
+
+/* EXTRA (For Polls) */
+
+.poll-section * {
+    color: var(--rich-black);
+}
+
+.poll-container {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+footer {
+    margin-top: 26px;
+}
