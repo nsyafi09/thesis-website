@@ -62,6 +62,14 @@
     font-weight: 300;
 }
 
+.about-content strong {
+    color: var(--rich-black);
+}
+
+.about-content a {
+    color: var(--rich-black);
+}
+
 
 .about-content {
     padding: 2rem 4rem;
